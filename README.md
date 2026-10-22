@@ -6,6 +6,12 @@ This document intentionally contains **no user name, host name, local directory,
 
 > These are field observations, not official ComfyUI or AMD support guidance. The exact root cause of the original slowdown was not conclusively proven.
 
+## Download the full PDF guide
+
+[**Download / open the public PDF field guide**](./ComfyUI_ROCm_RDNA2_DynamicVRAM_Field_Guide_Public_v1.pdf)
+
+The PDF is a formatted companion to this README and contains the same anonymized troubleshooting material in a printable form.
+
 ## The problem
 
 A Krea2 mixed-precision workflow whose diffusion model staged at roughly **12.86 GB** was being run on a device reporting about **12.27 GB VRAM**. DynamicVRAM and async weight offloading were therefore necessary.
